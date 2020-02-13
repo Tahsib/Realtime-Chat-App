@@ -23,7 +23,7 @@
 
 <script>
     var socket = io()
-
+    
 $(() => {
     
     $("#send").click( () => {
@@ -32,6 +32,8 @@ $(() => {
     } )
     getMessages()
 } )
+
+
 
 socket.on('message',addMessages)
 
